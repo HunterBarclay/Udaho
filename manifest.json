@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "U Da Ho",
+    "version": "1.0",
+
+    "permissions": [],
+  
+    "description": "Restyles parts of Idahos State Legislature website",
+  
+    "icons": {
+        "96": "icons/Udaho.png"
+    },
+  
+    "content_scripts": [
+        {
+            "matches": ["*://legislature.idaho.gov/statutesrules/idstat/*"],
+            "js": ["udaho.js"]
+        }
+    ],
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{cd1c4650-e88e-4294-b972-0121754008c6}",
+            "strict_min_version": "1.0"
+        }
+    }
+      
+}
+  
